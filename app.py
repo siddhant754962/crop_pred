@@ -8,8 +8,8 @@ import plotly.graph_objects as go
 # ------------------------------
 # Load trained pipeline
 # ------------------------------
-pipeline = joblib.load("crop_yield_pipeline.pkl")
-data = pd.read_csv("yield_df.csv")
+pipeline = joblib.load(r"crop_yield_pipeline1.pkl")
+data = pd.read_csv(r"yield_df.csv")
 
 # ------------------------------
 # Page config
