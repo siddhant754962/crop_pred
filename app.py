@@ -2,14 +2,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-from PIL import Image
+
 import plotly.graph_objects as go
 
 # ------------------------------
 # Load trained pipeline
 # ------------------------------
-pipeline = joblib.load(r"crop_yield_pipeline1.pkl")
-data = pd.read_csv(r"yield_df.csv")
+pipeline = joblib.load("crop_yield_pipeline1.pkl")
+data = pd.read_csv("yield_df.csv")
 
 # ------------------------------
 # Page config
